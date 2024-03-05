@@ -1,29 +1,11 @@
 import './App.css'
-import Joke from './Joke'
 
 function App() {
+    return (
+        <div className="App">
+            <h1>Jokes App</h1>
+        </div>
+    )
+}
 
- const jokes = [
-  {
-    id: 1,
-    text: "I'm afraid for the calendar. Its days are numbered."
-  },
-  {
-    id: 2,
-    text: "I used to be addicted to soap,but I am clean now."
-  }
- ]
-
- return (
-  <div className="">
-    <h1>Dad Jokes</h1>
-
-    {jokes.map(joke => (
-      <Joke key={joke.id} id={joke.id} text={joke.text} />
-    ))}
-
-  </div>
- )
-    }
-    
 export default App
